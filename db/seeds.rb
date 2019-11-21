@@ -6,4 +6,6 @@ text = open(url).read
 ingredients = JSON.parse(text)
 ingredients['drinks'].each do |ingredient|
  Ingredient.create(name: ingredient['strIngredient1'])
+
+ Ingredient.create(name: "coke")
 end
