@@ -1,5 +1,10 @@
-<h1>Cocktails</h1>
-<p>How you wanna die today?</p>
+<div class="banner" style="padding:15px; text-align:center;">
+  <div class="banner-content">
+    <h1>Cocktail</h1>
+    <p>you choose the drink, we make sure you die</p>
+    <%= link_to 'Create new cocktail', new_cocktail_path %></td>
+  </div>
+</div>
 <div class="container">
   <div class="row">
     <% @cocktails.each do |cocktail| %>
@@ -15,15 +20,6 @@
           </div>
         </div>
       </div>
-        <% end %>
+      <% end %>
     </div>
   </div>
-
-
-
-  <br>
-  <br>
-  <br>
-  <%= link_to 'Create new cocktail', new_cocktail_path %></td>
-
-
